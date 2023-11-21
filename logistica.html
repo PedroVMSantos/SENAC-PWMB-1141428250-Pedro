@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Plataforma de Gestão e Logística">
+   <meta name="keywords" content="Logistica, Gestao, Entrega, Envio, Encomenda, Rastreamento">
+   <meta name="author" content="Mariana Nery de Andrade Domingues e Pedro Vinicius Marques dos Santos">
+
+   <link rel="icon" href="img/pacote.png" type="image/x-icon">
+   <link rel="shortcut icon" href="img/pacote.png" type="image/x-icon">
+   
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsivo.css">
+   <link rel="stylesheet" href="css/logistica.css">
+
+   <title>LogisTrack</title>
+
+</head>
+<body>
+
+   <nav class="navbar">
+      <div class="logo">
+         <h1>LogisTrack</h1>
+      </div>
+      <div class="menu">
+       <ul>
+          <a href="index.html">Início</a>
+          <a href="rastreamento.html">Rastreamento</a>
+          <a href="logistica.html">Logística</a>
+          <a id="login" href="login.html">Login/Cadastro</a>
+         </ul>
+      </div>
+   </nav>
+
+   <img class="imagem-banner" src="img/plataforma-banner1.png" alt="">
+
+   <div class="section-plan">
+   <div class="plan-card" id="basic-plan">
+      <div class="plan-name">Plano Básico</div>
+      <div class="plan-price">R$19.99/mês</div>
+      <ul class="benefits">
+          <li>Rastreamento em tempo real</li>
+          <li>Entregas nacionais</li>
+          <li>Relatórios de entrega mensais</li>
+          <li>Assistência ao cliente básica</li>
+          <li>Descontos exclusivos em parceiros de envio</li>
+      </ul>
+  </div>
+
+  <div class="plan-card" id="standard-plan">
+      <div class="plan-name">Plano Padrão</div>
+      <div class="plan-price">R$39.99/mês</div>
+      <ul class="benefits">
+          <li>Rastreamento em tempo real</li>
+          <li>Entregas nacionais e internacionais</li>
+          <li>Otimização de rotas</li>
+          <li>Relatórios de entrega mensais e semanais</li>
+          <li>Assistência ao cliente avançada</li>
+          <li>Descontos exclusivos em parceiros de envio</li>
+      </ul>
+  </div>
+
+  <div class="plan-card" id="premium-plan">
+      <div class="plan-name">Plano Premium</div>
+      <div class="plan-price">R$69.99/mês</div>
+      <ul class="benefits">
+          <li>Rastreamento em tempo real</li>
+          <li>Entregas nacionais e internacionais</li>
+          <li>Otimização de rotas</li>
+          <li>Gestão de estoque</li>
+          <li>Relatórios de entrega mensais, semanais e diários</li>
+          <li>Assistência ao cliente premium</li>
+          <li>Descontos exclusivos em parceiros de envio</li>
+          <li>Acesso prioritário a novos recursos</li>
+      </ul>
+  </div>
+</div>
+<div class="cards-section">
+
+<form id="encomendaForm">
+   <h2>Cadastrar Encomenda</h2>
+   <label for="codigo">Código da Encomenda:</label>
+   <input type="text" id="codigo" maxlength="7" required>
+
+   <label for="status">Status:</label>
+   <select id="status" required>
+     <option value="preparando">Sendo Preparada</option>
+     <option value="caminho">À Caminho</option>
+     <option value="entregue">Entregue</option>
+   </select>
+
+   <label for="dataHora">Data e Hora do Pedido:</label>
+   <input type="datetime-local" id="dataHora" required>
+
+   <label for="destinatario">Destinatário:</label>
+   <input type="text" id="destinatario" required>
+
+   <label for="telefone">Telefone do Destinatário:</label>
+   <input type="tel" id="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(11) 91234-5678" required>
+
+   <label for="endereco">Endereço de Entrega:</label>
+   <input type="text" id="endereco" required>
+   <p></p>
+   <button type="button" onclick="adicionarEncomenda()">Adicionar Encomenda</button>
+ </form>   
+
+
+ <div class="texto-direita">
+   <div class="icones">
+   <div class="icone"><img src="img/entrega-rapida.png" alt="Ícone 1"></div>
+   <div class="icone"><img src="img/voo-de-aviao.png" alt="Ícone 1"></div>
+   <div class="icone"><img src="img/lista-de-controle.png" alt="Ícone 1"></div>
+   <div class="icone"><img src="img/documentacao.png" alt="Ícone 1"></div>
+   <div class="icone"><img src="img/consultor.png" alt="Ícone 1"></div>
+   </div>
+   
+   <h2 style="text-align: right;">Logística Eficiente para Conectar o Mundo</h2>
+
+   <p>
+      Na essência da nossa empresa de logística, a excelência permeia cada etapa do nosso processo. Com uma visão voltada para o futuro, estamos comprometidos em proporcionar uma logística eficiente que vai além do simples transporte de mercadorias. Somos os arquitetos de uma cadeia de suprimentos inovadora, conectando empresas e clientes de maneira mais rápida, segura e inteligente.
+   </p>
+   <p>
+      A base da nossa abordagem reside na tecnologia avançada e na inovação contínua. Utilizamos sistemas de rastreamento em tempo real para fornecer visibilidade completa das remessas, garantindo transparência em cada movimento. Nossa otimização de rotas redefine a eficiência, minimizando os prazos de entrega e maximizando a economia de custos para nossos clientes.
+   </p>
+
+   <p>
+      Não nos limitamos apenas ao movimento físico de produtos; oferecemos soluções logísticas personalizadas que se adaptam às necessidades únicas de cada negócio. Seja através de serviços de armazenagem estratégica, gestão de estoque precisa ou consultoria especializada, estamos aqui para moldar uma logística que impulsione o sucesso.
+   </p>
+
+   <p>
+      A sustentabilidade é a espinha dorsal da nossa operação. Cientes da responsabilidade ambiental, incorporamos práticas sustentáveis em cada aspecto do nosso negócio, garantindo que a eficiência logística vá de mãos dadas com a preservação do meio ambiente.
+   </p>
+
+
+</div>
+</div>
+
+
+<footer>
+   <div class="logo-footer">
+   <h1 class="logis">LogisTrack</h1>
+   <p style="color: white;">&copy; 2023 LogisTrack | Todos os direitos reservados</p>
+  </div>
+</footer>
+
+
+<a class="whatsapp-logo"   target="_blank"
+href="https://api.whatsapp.com/send?phone=5511989244643&text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20pois%20me%20interessei%20nos%20servi%C3%A7os%20de%20voc%C3%AAs%20que%20vi%20no%20site!"><img style="width: 60px;" src="img/whatsapp.png" alt=""></a>
+
+<script src="./js/script.js"></script>
+  <script src="./js/rastreamento.js"></script>
+
+</body>
+</html>

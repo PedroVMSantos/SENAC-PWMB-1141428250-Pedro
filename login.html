@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Plataforma de Gestão e Logística">
+   <meta name="keywords" content="Logistica, Gestao, Entrega, Envio, Encomenda, Rastreamento">
+   <meta name="author" content="Mariana Nery de Andrade Domingues e Pedro Vinicius Marques dos Santos">
+   
+   <link rel="icon" href="img/pacote.png" type="image/x-icon">
+   <link rel="shortcut icon" href="img/pacote.png" type="image/x-icon">
+
+   <link rel="stylesheet" href="css/login_cad.css">
+
+
+   <title>LogisTrack</title>
+</head>
+<body>
+
+  
+
+   <div id="login-container" class="form-container">
+      <h2>Login</h2>
+      <form id="login-form">
+          <label for="login-username">Usuário:</label>
+          <input type="text" id="login-username" required>
+          <p></p>
+          <label for="login-password">Senha:</label>
+          <input type="password" id="login-password" required>
+          <button type="button" onclick="login()">Login</button>
+          <p>Não tem uma conta ainda? <a href="#" onclick="showRegistrationForm()">Clique aqui!</a></p>
+      </form>
+  </div>
+
+  <div id="registration-container" class="form-container" style="display:none;">
+      <h2>Cadastro</h2>
+      <form id="registration-form">
+          <label for="reg-name">Nome:</label>
+          <input type="text" id="reg-name" required>
+          <p></p>
+          <label for="reg-email">Email:</label>
+          <input type="email" id="reg-email" required>
+          <p></p>
+          <label for="reg-username">Usuário:</label>
+          <input type="text" id="reg-username" required>
+          <p></p>
+          <label for="reg-password">Senha:</label>
+          <input type="password" id="reg-password" required>
+          <p></p>
+          <button type="button" onclick="register()">Cadastrar</button>
+      </form>
+  </div>
+
+  <script src="./js/login_cad.js"></script>
+
+</body>
+</html>

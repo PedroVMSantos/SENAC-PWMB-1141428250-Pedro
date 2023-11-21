@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Plataforma de Gestão e Logística">
+   <meta name="keywords" content="Logistica, Gestao, Entrega, Envio, Encomenda, Rastreamento">
+   <meta name="author" content="Mariana Nery de Andrade Domingues e Pedro Vinicius Marques dos Santos">
+
+   <link rel="icon" href="img/pacote.png" type="image/x-icon">
+   <link rel="shortcut icon" href="img/pacote.png" type="image/x-icon">
+   
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsivo.css">
+   <link rel="stylesheet" href="css/rastreamento.css">
+
+
+   <title>LogisTrack</title>
+
+</head>
+<body>
+   
+   <nav class="navbar">
+      <div class="logo">
+         <h1>LogisTrack</h1>
+      </div>
+      <div class="menu">
+       <ul>
+          <a href="index.html">Início</a>
+          <a href="rastreamento.html">Rastreamento</a>
+          <a href="logistica.html">Logística</a>
+          <a id="login" href="login.html">Login/Cadastro</a>
+         </ul>
+      </div>
+   </nav>
+
+   <img class="imagem-banner" src="img/BlackFriday-banner.png" alt="">
+
+      <div class="cards-section">
+         <div class="card">
+             <h2>Consultar Encomenda</h2>
+             <label for="consultaCodigo">Código ou CPF:</label>
+            <input type="text" id="consultaCodigo"  placeholder="AA123456789BR ou 000.111.222-33" required>   
+            <button type="button" onclick="consultarEncomenda()">Consultar</button>
+         <div id="resultadoConsulta"></div>
+         </div>
+
+          <div class="texto-direita">
+            <div class="icone"><img src="img/missao.png" alt="Ícone 1"></div>
+
+               <h3>Missão</h3>
+               <p>
+                 Facilitar o fluxo eficiente de mercadorias, impulsionando o sucesso de nossos clientes através de soluções logísticas inteligentes. Comprometemo-nos a proporcionar experiências de entrega excepcionais, impulsionadas pela inovação, sustentabilidade e um compromisso inabalável com a satisfação do cliente.
+               </p>
+            </div>
+
+      </div>
+
+<div class="cards-encontre">
+
+   <div class="card">
+      <h2>Encontre sua agência</h2>
+      
+      <label for="estadoSelect">Selecione o Estado:</label>
+      <select id="estado" onchange="carregarAgencias()">
+          <option value="">Selecione...</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="GO">Goiás</option>
+          <option value="PR">Paraná</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="SP">São Paulo</option>
+      </select>
+  
+      <div id="agencias-info"></div>
+
+      <div id="franquias">
+         <h2>Franquias Disponíveis:</h2>
+         <div class="franquia-card" id="franquiaCard"></div>
+      </div>
+
+      <div id="cardsAgencias"></div>
+
+   </div>
+   
+   <div id="resultadoBusca"></div>
+   <div id="detalhesAgencia"></div>
+
+   <div class="texto-direita">
+      <div class="icone"><img src="img/visao.png" alt="Ícone 1"></div>
+      <h3>Visão</h3>
+      <p>
+         Ser reconhecida como a principal plataforma de gestão de logística e entregas, pioneira em soluções inovadoras que otimizam processos, conectam empresas e clientes, e definem novos padrões de excelência no setor logístico.
+         Ao nos posicionarmos como pioneiros, estamos comprometidos não apenas em seguir as tendências, mas em definir as tendências. Nossa visão transcende a mera eficiência; é uma visão de excelência transformadora que redefine o panorama logístico global.
+      </p>
+   </div>
+
+</div>
+      
+<div class="container">
+   <h1 class="titulo-valores">Valores da LogisTrack</h1>
+   <div class="valores-container">
+      <div class="valor-card">
+         <div class="icone"><img src="img/eficiencia.png" alt="Ícone 1"></div>
+            <h2>Compromisso com a Eficiência</h2>
+               <p>Nosso compromisso é oferecer serviços logísticos eficientes, mantendo a qualidade e a rapidez nas operações.</p>
+      </div>
+
+      <div class="valor-card">
+         <div class="icone"><img src="img/planeta-terra.png" alt="Ícone 2"></div>
+            <h2>Sustentabilidade</h2>
+              <p>Investimos em soluções inovadoras que não apenas atendam às necessidades dos clientes, mas também promovam a sustentabilidade.</p>
+      </div>
+
+      <div class="valor-card">
+           <div class="icone"><img src="img/atendimento-ao-cliente.png" alt="Ícone 3"></div>
+           <h2>Foco no Cliente</h2>
+           <p>O cliente está no centro de nossas operações. Trabalhamos para superar expectativas e garantir a satisfação em cada entrega.</p>
+         </div>
+       
+       <div class="valor-card">
+         <div class="icone"><img src="img/ideia.png" alt="Ícone 1"></div>
+         <h2>Inovação</h2>
+         <p>Buscamos constantemente soluções criativas e tecnologicamente avançadas para melhorar continuamente nossos serviços.</p>
+      </div>
+     
+     <div class="valor-card">
+         <div class="icone"><img src="img/garantia.png" alt="Ícone 2"></div>
+         <h2>Confiança</h2>
+         <p>Construímos relacionamentos sólidos baseados na transparência, integridade e confiabilidade em cada interação.</p>
+      </div>
+     
+     <div class="valor-card">
+         <div class="icone"><img src="img/adaptativo.png" alt="Ícone 3"></div>
+         <h2>Adaptabilidade</h2>
+         <p>O cliente está no centro de nossas operações. Trabalhamos para superar expectativas e garantir a satisfação em cada entrega.</p>
+      </div>
+   </div>
+</div>
+
+<footer>
+   <div class="logo-footer">
+   <h1 class="logis">LogisTrack</h1>
+   <p style="color: white;">&copy; 2023 LogisTrack | Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<a class="whatsapp-logo"   target="_blank"
+  href="https://api.whatsapp.com/send?phone=5511989244643&text=Ol%C3%A1!%20Estou%20entrando%20em%20contato%20pois%20me%20interessei%20nos%20servi%C3%A7os%20de%20voc%C3%AAs%20que%20vi%20no%20site!"><img style="width: 60px;" src="img/whatsapp.png" alt=""></a>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/rastreamento.js"></script>
+</body>
+</html>
