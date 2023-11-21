@@ -1,0 +1,124 @@
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   font-family: Nunito Sans;
+}
+
+.navbar{
+   display: flex;
+   background-color: white;
+   flex-flow: row wrap;
+   height: 100px;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+}
+
+.navbar ul a:hover{
+   transition: 0.3s;
+}
+
+.logo{
+   flex: 10%;
+   margin-left: 10%;
+   align-items: center;
+}
+
+
+.logo h1{
+   flex: 20px;
+   text-align: center;
+   font-family: Bitter;
+   font-weight: bold;
+   color: #180f4a;
+}
+
+.menu{
+   flex: 80%;
+   text-align: right;
+   padding: 20px;
+}
+
+.menu a{
+   color: #180f4a;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 20px 16px;
+}
+
+.menu a:hover{
+   color: #0077cc;
+   border-top: 4px solid #180f4a;
+}
+
+#login{
+   background-color: #180f4a;
+   padding: 10px 25px;
+   color: white;
+   border-radius: 5px;
+   margin-right: 5%;
+   margin-left: 5%;
+}
+
+#login:hover{
+   border: none;
+   background-color: #0077cc;
+}
+
+.botao-contrate{
+   cursor: pointer;
+   display: inline-block;
+   background-color: #0077cc;
+   padding: 20px;
+   color: white;
+   text-transform: uppercase;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.botao-contrate:hover{
+   background-color: #180f4a;
+   border: none;
+}
+
+body {
+   font-family: 'Arial', sans-serif;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: #f4f4f4;
+}
+
+.form-container {
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   padding: 20px;
+   text-align: center;
+}
+
+button {
+   background-color: #0077cc;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #005580;
+}
+
+#login-form{
+   align-items: center;
+   text-align: center;
+}

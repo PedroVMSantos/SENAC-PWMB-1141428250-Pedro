@@ -1,0 +1,234 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   font-family: Nunito Sans;
+}
+
+.navbar{
+   display: flex;
+   background-color: white;
+   flex-flow: row wrap;
+   height: 100px;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+}
+
+.navbar ul a:hover{
+   transition: 0.3s;
+}
+
+.logo{
+   flex: 10%;
+   margin-left: 10%;
+   align-items: center;
+}
+
+
+.logo h1{
+   flex: 20px;
+   text-align: center;
+   font-family: Bitter;
+   font-weight: bold;
+   color: #180f4a;
+}
+
+.menu{
+   flex: 80%;
+   text-align: right;
+   padding: 20px;
+}
+
+.menu a{
+   color: #180f4a;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 20px 16px;
+}
+
+.menu a:hover{
+   color: #0077cc;
+   border-top: 4px solid #180f4a;
+}
+
+#login{
+   background-color: #180f4a;
+   padding: 10px 25px;
+   color: white;
+   border-radius: 5px;
+   margin-right: 5%;
+   margin-left: 5%;
+}
+
+#login:hover{
+   border: none;
+   background-color: #0077cc;
+}
+
+.botao-contrate{
+   cursor: pointer;
+   display: inline-block;
+   background-color: #0077cc;
+   padding: 20px;
+   color: white;
+   text-transform: uppercase;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.botao-contrate:hover{
+   background-color: #180f4a;
+   border: none;
+}
+
+.header{
+   justify-content: center;
+   align-items: top;
+   display: inline-flex;
+   flex-flow: row wrap;
+   height: 350px;
+   background-color: white;
+   padding-top: 100px;
+   
+}
+.headline p{
+   align-items: center;
+   color: black;
+}
+
+.headline{
+   margin-left: 10%;
+   flex: 40%;
+
+}
+
+.headline h2{
+   font-weight: 600;
+   font-size: 35px;
+   color: #1f1267;
+   font-weight: bold;
+   padding: 0;
+   margin: 0;
+}
+
+.text-chamada{
+   font-weight: 600;
+   font-size: 35px;
+   color: #1f1267;
+   font-weight: bold;
+   padding-top: 50px;
+   margin: 0;
+}
+.img-headline{
+   width: 5px;
+   height: 5px;
+   margin-right: 5%;
+   flex: 40%;
+   text-align: center;
+}
+
+section{
+   display: inline-block;
+   margin-top: 190px;
+   margin-left: 5%;
+   margin-right: 5%;
+   text-align: left;
+   width: 90%;
+}
+
+section h2{
+   width: 100%;
+   font-size: 50px;
+   margin: 0;
+   font-family: Bitter;
+   font-weight: bold;
+   color: #180f4a;
+}
+
+.servicos{
+   display: inline-block;
+   margin-top: 5%;
+}
+
+.card{
+   padding-top: 15px;
+   display: inline-block;
+   width: 30%;
+   padding: 20px;
+   margin: 1%;
+   border: 2px solid #0077cc;
+   text-align: center;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.card:hover{
+   background-color: #0077cc;
+   color:white;
+   padding: 50px;
+}
+
+.card:hover img{
+   display: none;
+}
+
+.card:hover .card-text{
+   display: none;
+}
+
+.card:hover .oculto-text{
+   display: block;
+}
+
+.oculto-text{
+   display: none;
+}
+
+footer{
+   margin-top: 100px;
+   height: 200px;
+   background-image: linear-gradient(180deg, white, #0077cc, rgb(76, 60, 170));
+   text-align: center;
+}
+
+.logo-footer{
+   padding: 40px;
+}
+
+.logis{
+   flex: 20px;
+   text-align: center;
+   font-family: Bitter;
+   font-weight: bold;
+   color: white;
+}
+
+.whatsapp-logo{
+   position: fixed;
+   bottom: 5px;
+   right: 5px;
+   height: 60px;
+   width: 60px;
+   border-radius: 10px;
+}
+
+.icones{
+   display: flex;
+   justify-content: space-between;
+   padding-right: 45px;
+ }
+ 
+ .icones img{
+   display: inline-block;
+   max-width: 50px;
+   max-height: 50px;
+   align-items: center;
+ }

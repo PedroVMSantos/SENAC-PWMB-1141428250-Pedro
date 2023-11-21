@@ -1,0 +1,50 @@
+@media screen and (max-width:1000px){
+
+   .navbar{
+      position: relative;
+   }
+   .menu{
+      display: none;
+   }
+   .logo{
+      margin: 0;
+      text-align: center;
+      padding-top: 50px;
+   }
+
+   .headline{
+      flex: 100%;
+      margin: 5%;
+      text-align: center;
+   }
+
+   .headline p{
+      text-align: center;
+   }
+
+   .img-headline{
+      flex: 100%;
+      margin: 5%;
+      text-align: center;
+      padding-top: 150px;
+      padding-bottom: 150px;
+   }
+
+   .bloco1{
+      padding-top : 150px;
+   }
+
+   .card{
+      width: 100%;
+      padding-top : 150px;
+   }
+
+   .whatsapp-logo{
+      display: none;
+   }
+
+   .text-chamada{
+      padding-top: 100px;
+   }
+
+}
